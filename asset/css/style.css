@@ -1,0 +1,163 @@
+/* ***** navigation ***** */
+nav{
+    box-shadow: 0 10px 10px rgba(159, 162, 177, 0.8);
+    border-radius: 10px;
+}
+
+#btn-loging{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #dbb000;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+}
+#btn-loging:hover{
+    color:white;
+    background-color: #dbb000;
+}
+
+#btn-cart{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #dbb000;
+    border-radius: 20px;
+    padding: 7px 20px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+#btn-cart:hover{
+    color:white;
+    background-color: #dbb000;
+}
+
+.nav-item{
+    margin-right: 15px;
+    position: relative;
+    font-family: sans-serif;
+}
+.nav-item::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #dbb000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #dbb000;
+}
+.nav-item:hover::after{
+    opacity: 1;
+}
+/* .nav-item:hover{
+    text-shadow: 2px 2px 4px #dbb000;
+} */
+
+.box{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+    border: 2px solid #dbb000;
+    margin-right: 10px;
+    /* margin-top: 2px; */
+}
+.box:hover input{
+    width: 300px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fas{
+    color: #dbb000;
+    font-size: 18px;
+}
+
+
+/* ****** Home ***** */
+/* .home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+.home .home-text h1{
+    color: #000;
+    font-size: 75px;
+    position: relative;
+    top: -60px;
+    left: 5%;
+}
+
+.home .home-text p{
+    color: #000;
+    width: 650px;
+    position: relative;
+    top: -40px;
+    left: 5%;
+    line-height: 23px;
+    text-align: justify;
+}
+
+.home .home-order-btn i{
+    margin-right: 10px;
+}
+
+.home .home-text .home-order-btn{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #facc22;
+    padding: 10px 20px;
+    position: relative;
+    top: 10px; 
+    left: 5%;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.home .home-text .home-order-btn:hover{
+    color: #fff;
+}
+
+.home .home-text .home-order-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #facc22;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.home .home-text .home-order-btn:hover::before{
+    top: unset;
+    width: 100%;
+    bottom: 0;
+}
+
+.home .home-image img{
+    width: 650px;
+    animation: animate 5s linear infinite;
+    position: relative;
+    top: -20px;
+}
+
+#home-text{
+    background-color: #000;
+} */
