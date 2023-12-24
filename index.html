@@ -8,101 +8,322 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swipper-style.css" />
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="asset/lib/wow/wow.js"></script>
+    <script src="asset/lib/wow/wow.min.js"></script>
 
     <title>MOS Burgers</title>
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-    <!-- navigation bar start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <!-- logo  -->
-        <a class="navbar-brand" href="index.html">
-            <img src=".\asset\img\logo1.png" alt="" width="130px" height="30px">
-        </a>
-        <!-- response navigation bar -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pulse " id="nav-ul">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">MENU</a>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                SERVICE
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="main row">
+      <div class="row col-lg-12 col-md-12 col-sm-12">
+        <!-- navigation bar start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+          <div class="container-fluid">
+  
+            <!-- logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src=".\asset\img\logo1.png" alt="" width="130px" height="30px">
+            </a>
+  
+            <!-- response navigation bar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pulse " id="nav-ul">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-id">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service-id">SERVICE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#gallery-title-id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GALLERY
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#gallery-title-id">OFFERS</a></li>
+                    <li><a class="dropdown-item" href="#interior-id">INTERIOR</a></li>
+                    <li><a class="dropdown-item" href="#id-function">FUNCTION</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">GALLERY</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <!-- customize search bar -->
-            <div class="box" id="search">
-                <input type="text" placeholder="Search">
-                <a href="#">
-                    <img src="asset/img/search.png" alt="" width="20px" class="fas fa-search">
-                </a>
+  
+              <form class="d-flex" role="search">
+                <!-- customize search bar -->
+                <div class="box" id="search">
+                    <input type="text" placeholder="Search">
+                    <a href="#">
+                        <img src="asset/img/search.png" alt="" width="20px" class="fas fa-search">
+                    </a>
+                </div>
+  
+                <button class="btn btn-outline-warning btn-sm" id="btn-cart" type="submit">
+                    <img src="asset/img/shopping-cart.png" alt="" width="20px">
+                </button>
+                <button class="btn btn-outline-warning btn-sm" id="btn-loging" type="submit">
+                    <img src="asset/img/user.png" alt="" width="20px">
+                </button>
+              </form>
+  
             </div>
-
-            <button class="btn btn-outline-warning btn-sm" id="btn-cart" type="submit">
-                <img src="asset/img/shopping-cart.png" alt="" width="20px">
-            </button>
-            <button class="btn btn-outline-warning btn-sm" id="btn-loging" type="submit">
-                <img src="asset/img/user.png" alt="" width="20px">
-            </button>
-          </form>
-        </div>
+          </div>
+        </nav>
+      <!-- navigation bar end -->
       </div>
-    </nav>
-    <!-- navigation bar end -->
+    </div>
+  
+      <!-- home page start -->
+      
+      <div class="row container-fluid home">
+          <div class="col-lg-6 col-md-12 col-sm-12 home-text" id="div-1">
+                  <h1>Enjoy Our<br>Delicious Meals</h1>
+      
+                  <p>
+                      Discover burger delight at our shop where flavor meets perfection in every bite. <br>
+                      Simple, yet irresistibly delicious. Join us for a taste that speaks volumes in simplicity. <br>
+                      Come and enjoy our delicious meals.
+                  </p>
+      
+                  <a href="#" class="home-order-btn btn"><i class="fa-solid fa-burger"></i>Order Now</a>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 home-image" id="image">
+                  <img src="asset/img/home2.png" class="img-fluid" onload="changeImage()">
+          </div>
+        
+      </div>
+  
+      <!-- home page end -->
 
-    <!-- start home page -->
-    
-    <div class="row container-fluid">
-        <div class="col-lg-6 col-md-12 col-sm-12" id="div-1">
-            <div class="home-text" id="home-text">
 
-                <h1>Enjoy Our<br>Delicious Meal</h1>
-    
-                <p>
-                    Discover burger delight at our shop where flavor meets perfection in every bite. <br>
-                    Simple, yet irresistibly delicious. Join us for a taste that speaks volumes in simplicity.
-                </p>
-    
-                <a href="#" class="home-order-btn btn"><i class="fa-solid fa-burger"></i>Order Now</a>
-    
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12" id="div-2">
-            <div class="home-image">
-                <img src="asset/img/home2.png" class="img-fluid">
-            </div>
+    <!-- About Start -->
+    <div class="container-xxl py-5 about row" style="background-image: url(asset/img/about-bg.jpg);" id="about-id">
+      <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                  <div class="row g-3">
+                      <div class="col-6 text-start">
+                          <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="asset/img/about1.jpg">
+                      </div>
+                      <div class="col-6 text-start">
+                          <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="asset/img/function1.jpg" style="margin-top: 25%;">
+                      </div>
+                      <div class="col-6 text-end">
+                          <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="asset/img/function2.jpeg">
+                      </div>
+                      <div class="col-6 text-end">
+                          <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="asset/img/about4.png">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 about-second">
+                  <h3 class="about-title" id="about-title-id">~ About <span>Us</span> ~</h3><br>
+                  <h1 class="mb-4">Welcome to <span>MOS Burgers</span></h1>
+                  <p class="mb-4">
+                    Step into our burger wonderland, where sweetness and sizzle collide. <br><br>
+                    Our burgers are more than a meal they're a taste adventure, a blend of sweet and savory that will leave your taste buds singing. <br><br>
+                    Join us in savoring every bite of our uniquely crafted creations, redefining the burger experience with each delicious moment.
+                  </p>
+                    <div class="about-services">
+
+                      <div class="s-1">
+                          <i class="fa-solid fa-truck-fast"></i>
+                          <a href="#">Fast Delivery</a>
+                      </div>
+
+                      <div class="s-1">
+                          <i class="fa-brands fa-amazon-pay"></i>
+                          <a href="#">Easy Payment</a>
+                      </div>
+
+                      <div class="s-1">
+                          <i class="fa-solid fa-headset"></i>
+                          <a href="#">24 x 7 Services</a>
+                      </div>
+                    </div>
+                  <a href="" class="order-btn btn"><i class="fa-solid fa-burger"></i>Order Now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5 Service" id="service-id">
+      <h1>~ Ser<span>vice</span> ~</h1>
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="Service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-3x fa-user-tie text-primary mb-4 icon"></i>
+                          <h5>Master Chefs</h5>
+                          <p>Master chefs orchestrate culinary symphonies, transforming ingredients into exquisite masterpieces of taste and artistry.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="Service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-3x fa-utensils text-primary mb-4 icon"></i>
+                          <h5>Quality Food</h5>
+                          <p>Indulge in a world of exceptional flavors with our quality foods, crafted for culinary perfection.</p><br>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="Service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-3x fa-cart-plus text-primary mb-4 icon"></i>
+                          <h5>Online Order</h5>
+                          <p>Experience convenience at your fingertips savor our delights with just a click through online orders.</p><br>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                  <div class="Service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-3x fa-headset text-primary mb-4 icon"></i>
+                          <h5>24/7 Service</h5>
+                          <p>Enjoy unparalleled convenience with our 24/7 service, catering to your needs around the clock.</p><br>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
+  <!-- Service End -->
 
-    <!-- end home page -->
+    <!-- Start gallery  -->
+    
+    <div class="gallery row" id="gallery-title-id" style="background-image: url(asset/img/about-bg.jpg);">
 
+      <h1>Gall<span>ery</span></h1>
+
+      <div class="container row offer-banner">
+          <img src="asset/img/offer1.jpg" alt="">
+      </div>
+      
+      <div class="container swiper container-gallery row" id="interior-id">
+        <div class="interior-tex row">
+          <h3>~ Inte<span>rior</span> ~</h3>
+        </div>
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper swiper-img-box">
+  
+            <div class="card swiper-slide swiper-box">
+              <div class="image-box">
+                <img src="asset/img/interior1.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior2.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior3.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior4.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior5.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior5.png" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/interior6.png" alt="" />
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn "></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination swipper-bullets"></div>
+      </div>
+
+      <div class="container swiper container-gallery row" id="id-function">
+        <div class="interior-tex row">
+          <h3>~ Func<span>tion</span> ~</h3>
+        </div>
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper swiper-img-box">
+  
+            <div class="card swiper-slide swiper-box">
+              <div class="image-box">
+                <img src="asset/img/function1.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/function2.jpeg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/function3.jpg" alt="" />
+              </div>
+            </div>
+  
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="asset/img/function4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn "></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination swipper-bullets"></div>
+      </div>
+
+    </div>
+    <!-- End gallery  -->
+
+
+    <!-- Template Javascript -->
+    <script src="asset/js/main.js"></script>
+    <!-- swiper script  -->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/swiper-script.js"></script>
   </body>
 </html>
